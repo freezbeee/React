@@ -1,0 +1,7 @@
+.container{
+    margin: 2rem;
+}
+.container-liste{
+    margin: 4rem;
+    border: solid 5px rgb(49, 23, 49);
+}
