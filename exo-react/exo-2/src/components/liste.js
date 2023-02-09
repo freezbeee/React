@@ -9,27 +9,27 @@ export class List extends Component{
         super(props)
         this.state = {
             contact : [{ 
-                info : {
+                
                 nom: "le cht'i", 
                 prenom: "beber",
                 telephone: "06254826",
-                statut : false  },
+                statut : true  ,
                 adresse: { rue: "4 avenue maroille", ville: "frometon", cp: "59200" }
             },
             { 
-                info : {
+                
                 nom: "jul", 
                 prenom: "julien",
                 telephone: "06757545",
-                statut : true  },
+                statut : false  ,
                 adresse: { rue: "5 avenue mistral", ville: "Marseille", cp: "48200" }
             },
             { 
-                info : {
+               
                 nom: "nom contact", 
                 prenom: "prenom contact",
                 telephone: "0123456789",
-                statut : false  },
+                statut : true  ,
                 adresse: { rue: "ma rue", ville: "ma ville", cp: "59200" }
             }] 
         }
