@@ -10,7 +10,7 @@ export class List extends Component{
         this.state = {
             contact : [{ 
                 
-                nom: "le cht'i", 
+                nom: "le chti", 
                 prenom: "beber",
                 telephone: "06254826",
                 statut : true  ,
@@ -26,21 +26,26 @@ export class List extends Component{
             },
             { 
                
-                nom: "nom contact", 
-                prenom: "prenom contact",
+                nom: " contact", 
+                prenom: " contact",
                 telephone: "0123456789",
                 statut : true  ,
                 adresse: { rue: "ma rue", ville: "ma ville", cp: "59200" }
             }] 
         }
     }
+    changeStatus = (name) => {
+        console.log('ici je dois modifier le status');
+        console.log(name);
+    }
+  
 
     render() {
         
         return(
             <div>
                 {
-                    this.state.contact.map((c,i) => (<Affichage key={i} contact={c}></Affichage>))
+                    this.state.contact.map((c,i) => (<Affichage key={i} contact={c} changeStatus={this.changeStatus}></Affichage>))
                 }
             </div>
         )

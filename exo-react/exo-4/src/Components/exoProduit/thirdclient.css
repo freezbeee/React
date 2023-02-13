@@ -1,0 +1,10 @@
+.td-produit{
+    margin: 1rem;
+    margin-right: 2rem ;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+.panier-container{
+    display: flex;
+    justify-content: space-around;
+}
