@@ -39,3 +39,6 @@ a{
 a:hover{
     padding: 0.6rem;
 }
+span{
+    color: rgb(0, 255, 255);
+}

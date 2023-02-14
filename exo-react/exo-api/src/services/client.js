@@ -23,10 +23,10 @@ export class Client extends Component {
             <>
 <div className='card'>
             <div className='container-client'>
-                          <p> id : {id} </p>
-                          <p> prenom : {firstName} </p>
-                         <p>  nom : {lastName} </p>
-                         <p>   phone : {phone} </p>
+                          <p><span> id :</span> {id} </p>
+                          <p><span> prenom : </span>{firstName} </p>
+                         <p><span>  nom : </span>{lastName} </p>
+                         <p><span>   phone :</span> {phone} </p>
                           <div className={status? "green": "red"}>{status? "actif": "non actif"}</div>
                           <a href="#" onClick={this.clickStatut} data-name={id}>Changer Statut</a>
                            
