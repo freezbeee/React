@@ -1,0 +1,16 @@
+*{
+    margin: 5px;
+}
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.container-client{
+    display: flex;
+    justify-content : space-between;
+    margin-bottom: 2rem;
+}

@@ -12,7 +12,7 @@ export class ListPoduit extends Component { // utilisation d'une classe
                 {
                     id: 1,
                     titre: "la tour de pi",
-                    prix: 3.14,
+                    prix: 314,
                     description : "elle est penchée a 3.14 degres",
                     
                 },{
@@ -43,10 +43,11 @@ export class ListPoduit extends Component { // utilisation d'une classe
         
        // console.log("ici je dois modifier le statut d'un client par rapport a son name")
        // console.log("j'ai recu en parametre :"+name)
-        const tmppanier = [...this.state.produit]
+        const tmpProduit = [...this.state.produit]
         
-        tmppanier.forEach(c => {
+        tmpProduit.forEach(c => {
             if(c.id == id){
+               
                  stockId = {id: c.id,
                     titre: c.titre,
                     prix: c.prix,
