@@ -27,7 +27,9 @@ export class Client extends Component {
                           <p><span> prenom : </span>{firstName} </p>
                          <p><span>  nom : </span>{lastName} </p>
                          <p><span>   phone :</span> {phone} </p>
+                         <div className='container-anim'>
                           <div className={status? "green": "red"}>{status? "actif": "non actif"}</div>
+                          </div>
                           <a href="#" onClick={this.clickStatut} data-name={id}>Changer Statut</a>
                            
             </div>
