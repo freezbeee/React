@@ -1,7 +1,7 @@
-import React, { Component } from 'react' // necessaire pour mon composant dans une classe
+import React, { Component } from 'react' 
 import {Address} from "./adresse"
 import './client.css';
-export class Client extends Component { // utilisation d'une classe 
+export class Client extends Component {
 
     constructor(props) {
         super(props)
@@ -17,8 +17,7 @@ export class Client extends Component { // utilisation d'une classe
 
     render() {
         const { id, firstName, lastName, phone, status, address} = this.props.data
-        // const {id,titre,prix,description} = this.props.produit
-        //return dans un React Fragment
+       
     
         return (
             <>

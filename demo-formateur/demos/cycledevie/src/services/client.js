@@ -30,9 +30,9 @@ export class Client extends Component { // utilisation d'une classe
                          <p>   phone : {phone} </p>
                           <div className={status? "green": "red"}>{status? "actif": "non actif"}</div>
                           <a href="#" onClick={this.clickStatut} data-name={id}>Changer Statut</a>
+                        <Address address={address}></Address>
                            
             </div>
-                        <Address address={address}></Address>
           
             </>
         )
