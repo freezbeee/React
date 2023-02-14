@@ -48,7 +48,7 @@ export class DataComponent extends Component {
                 {
                     // this.state.data.length == 0 ? <div>En cours de chargement ....</div>
                     // :
-                    <div>
+                    <div className="card-container">
                         {/* {this.state.data.map((e,i) => (<div key={i}>{e}</div>))} */}
                         {this.state.data.map((data,i) => (<Client data={data} key={i} changeStatutClientByid={this.changeStatutClientByid} ></Client>))}   
                         

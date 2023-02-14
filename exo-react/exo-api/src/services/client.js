@@ -21,7 +21,7 @@ export class Client extends Component {
     
         return (
             <>
-
+<div className='card'>
             <div className='container-client'>
                           <p> id : {id} </p>
                           <p> prenom : {firstName} </p>
@@ -31,7 +31,9 @@ export class Client extends Component {
                           <a href="#" onClick={this.clickStatut} data-name={id}>Changer Statut</a>
                            
             </div>
+
                         <Address address={address}></Address>
+                        </div>
           
             </>
         )
