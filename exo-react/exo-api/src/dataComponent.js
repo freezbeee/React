@@ -1,6 +1,7 @@
 import { Component } from "react"
 import { getData, getPokeApi, clientApi } from "./services/data.service"
 import { Client } from "./services/client"
+import { Formulaire } from "./services/Form"
 
 
 export class DataComponent extends Component {
@@ -51,10 +52,11 @@ export class DataComponent extends Component {
                     <div className="card-container">
                         {/* {this.state.data.map((e,i) => (<div key={i}>{e}</div>))} */}
                         {this.state.data.map((data,i) => (<Client data={data} key={i} changeStatutClientByid={this.changeStatutClientByid} ></Client>))}   
-                        
+                       
                      
                     </div>
                 }
+                <Formulaire></Formulaire>
             </div>
         )
     }

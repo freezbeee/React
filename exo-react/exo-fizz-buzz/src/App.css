@@ -1,0 +1,48 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.container{
+  margin: 2rem 7rem 0rem 7rem ;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.title{
+  display: flex;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.cicle-count{
+  background-color: aqua;
+  color: black;
+  font-size: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  padding: 2rem;
+  height: 10rem;
+  margin: 1rem 17rem 1rem 17rem;
+}
+/* .fizzbuzz{
+  color: red;
+} */
+.buzz{
+  color: green;
+}
+.fizz{
+  color: red;
+}
+button{
+  /* display: flex; */
+  background-color: blue;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+.container-btn{
+  display: flex;
+  margin-bottom: 10rem;
+}
+
