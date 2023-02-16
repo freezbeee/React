@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { AddCount } from "./addCount"
+import { Compteur } from "./compteur"
 import { RemoveCount } from "./removeCount"
 
 
@@ -24,12 +25,12 @@ export const FizzBuzz = () => {
         <h1 className="title">FizzBuzz</h1>
         <hr />
         <div className="cicle-count">
-            {compteur %15 ===0 && compteur>0 ? <><b className="fizz">Fizz</b><b className="buzz">Buzz</b></> : compteur %5 ===0 && compteur>0? <b className="buzz">Buzz</b> : compteur %3 ===0 && compteur>0? <b className="fizz">Fizz</b> : <b className="number">{compteur}</b> }
-        </div>
+           <Compteur compteur={compteur}/>
+           </div>
         <div className="container-btn">
             <div>
                <AddCount addcount={addCount}/>
-               {/* <button onClick={addCount}>+</button> */}
+              
                 
             </div>
             <div>
