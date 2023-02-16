@@ -1,4 +1,8 @@
 import { useState } from "react"
+import { AddCount } from "./addCount"
+import { RemoveCount } from "./removeCount"
+
+
 
 
 
@@ -24,11 +28,12 @@ export const FizzBuzz = () => {
         </div>
         <div className="container-btn">
             <div>
-                <button onClick={addCount}>+</button>
+               <AddCount addcount={addCount}/>
+               {/* <button onClick={addCount}>+</button> */}
                 
             </div>
             <div>
-            {compteur===0 ? <button>-</button> : <button onClick={removeCount}>-</button>}
+            <RemoveCount removeCount={removeCount} compteur={compteur}/>
             </div>
         </div>
         </div>
