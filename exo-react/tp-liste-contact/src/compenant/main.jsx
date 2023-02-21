@@ -130,15 +130,12 @@ export const MainCompenant = () => {
         }
       }
       
-      useEffect(() => {
-        refreshFish()
-      }, [])
       
       const deleteFisheHandler = async (fisheId) => {
         // eslint-disable-next-line no-restricted-globals
         if(confirm("Etes-vous sûr ?")) {
           const fishFound = fishes.find(fish => fish.id === fisheId)
-          console.log(fishFound)
+          // console.log(fishFound)
           if (fishFound) {
             try {
               const token = localStorage.getItem('token')
@@ -164,7 +161,7 @@ export const MainCompenant = () => {
       const updateFishHandler = async (newFish) => {
         // console.log('coucou')
         const fishFound = fishes.find(fish => fish.id === newFish.id)
-        console.log(fishFound)
+        // console.log(fishFound)
         if (fishFound) {
           // console.log('coucou2')
           const token = localStorage.getItem('token')
@@ -186,7 +183,7 @@ export const MainCompenant = () => {
               }
               
               const data = await response.json()
-              console.log(data);
+              // console.log(data);
               setUpdate(false)
               setFishes([...fishes.filter(fish => fish !== fishFound), newFish])
               // console.log('coucou5')
@@ -195,6 +192,7 @@ export const MainCompenant = () => {
               console.error(error.message);
             }
             // console.log('coucou6')
+            
           }
         }
       }
@@ -204,14 +202,17 @@ export const MainCompenant = () => {
         setUpdate(true)
         setModalFormVisible(true)
       }
-     
+      
       const switchadd = () =>{
         setUpdate(false)
         setModalFormVisible(true)
       }
-
-
-    
+      
+      
+      useEffect(() => {
+        refreshFish()
+      }, [])
+      
       
       
       return (
@@ -248,18 +249,22 @@ export const MainCompenant = () => {
         </ModalComponent>, document.getElementById("modal-root"))}
        
         <nav>
-            <div className=" d-flex bg-dark text-white ">
-            <i className="bi bi-arrow-through-heart-fill ms-4 d-flex"></i>
+            <div className=" d-flex justify-content-between bg-dark text-white  ">
+             
+                <div className="logo d-flex">
+            <i className="bi bi-arrow-through-heart-fill "></i>
             <h1 className="d-flex">Adopt un fish</h1>
-            <div className="d-flex  justify-content-end">
+            </div>
+            <div className="d-flex  ">
                  {!isLogged && <button className="btn btn-outline-info m-2" onClick={logIn}>log-in</button>}
             <button className="btn btn-outline-success m-2"  onClick={() => isLogged ? logOutHandler() : setModalVisible(true)}>{isLogged ? 'Log Out' : 'sign-up'}</button> 
 
             
+            
             </div>
             </div>
         </nav>
-        <div className="container bg-dark m-5 text-white ">
+        <div className="container bg-dark m-5 text-white p-3 ">
           <div className="d-flex justify-content-end">
         {isLogged && <button className="btn btn-outline-info m-2" onClick={switchadd}><i className="bi bi-plus-circle me-1"></i>Add Fish</button>}
         </div>

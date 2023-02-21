@@ -58,7 +58,7 @@ const FormUpdate = (props) => {
         </div>
         <div className="mb-3">
           <label htmlFor="firstName" className="form-label">type: </label>
-          <input required id="firstName"  defaultValue={props.fishSelect.lastNameRef} ref={firstNameRef} className="form-control" style={{resize: "none"}}></input>
+          <input required id="firstName"  defaultValue={props.fishSelect.lasteName} ref={firstNameRef} className="form-control" style={{resize: "none"}}></input>
         </div>
         <div className="mb-3">
           <label htmlFor="birth" className="form-label">Date de naissance: </label>
