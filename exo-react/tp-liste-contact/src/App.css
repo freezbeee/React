@@ -26,9 +26,17 @@ img{
   color: pink;
   font-size: 2rem;
 }
-body {
-  margin: 0;
+*{
+margin: 0;
   overflow: hidden;
+}
+body {
+  
+  z-index: -2;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(0deg, #182848, #2980b9)
 }
 
 
@@ -63,13 +71,11 @@ body {
   }
 }
 .ocean {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(0deg, #182848, #2980b9)
+ 
 }
 
 .bubble {
+  z-index: -1;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -219,12 +225,66 @@ body {
   animation-duration: 19s;
   opacity: 0.3;
 }
-.bubble--12 {
+.bubble--14 {
+  width: 1005px;
+  height: 1005px;
+  left: 10%;
+  bottom: 30px;
+  animation-delay: -18.5s;
+  animation-duration: 29s;
+  opacity: 0.2;
+}
+.bubble--15 {
+  width: 2005px;
+  height: 2005px;
+  left: 50%;
+  bottom: 30px;
+  animation-delay: -20.5s;
+  animation-duration: 60s;
+  opacity: 0.1;
+}
+.bubble--16 {
+  width: 60px;
+  height: 60px;
+  left: 90%;
+  bottom: 30px;
+  animation-delay: -5s;
+  animation-duration: 60s;
+  opacity: 0.3;
+}
+.bubble--17 {
+  width: 75px;
+  height: 75px;
+  left: 30%;
+  bottom: 50px;
+  animation-delay: -4.5s;
+  animation-duration: 10s;
+  opacity: 0.6;
+}
+.bubble--18 {
+  width: 35px;
+  height: 35px;
+  left: 40%;
+  bottom: 30px;
+  animation-delay: -5.5s;
+  animation-duration: 10s;
+  opacity: 0.4;
+}
+.bubble--19 {
   width: 305px;
   height: 305px;
   left: 50%;
-  bottom: 30px;
-  animation-delay: -15.5s;
+  bottom: 10px;
+  animation-delay: -20.5s;
   animation-duration: 19s;
   opacity: 0.3;
+}
+nav{
+  z-index: 2;
+}
+#modal-root{
+  z-index: 2;
+}
+#root{
+  z-index: 10;
 }
