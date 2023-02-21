@@ -43,6 +43,6 @@ button{
 }
 .container-btn{
   display: flex;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
 }
 

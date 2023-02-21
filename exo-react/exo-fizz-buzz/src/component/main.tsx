@@ -24,17 +24,20 @@ export const FizzBuzz = () => {
         <div className="container">
         <h1 className="title">FizzBuzz</h1>
         <hr />
+        {/* compteur */}
         <div className="cicle-count">
            <Compteur compteur={compteur}/>
            </div>
         <div className="container-btn">
+            {/* retirer */}
             <div>
-               <AddCount addcount={addCount}/>
+            <RemoveCount removeCount={removeCount} compteur={compteur}/>
               
                 
             </div>
+            {/* ajout */}
             <div>
-            <RemoveCount removeCount={removeCount} compteur={compteur}/>
+               <AddCount addcount={addCount}/>
             </div>
         </div>
         </div>
