@@ -12,12 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-/* body{
-  /* background-repeat: round; */
-  /* background-size: contain; */
-  /* background-image:  linear-gradient(180deg, rgba(10,49,217,0.5354516806722689) 0%, rgba(194,198,25,0.639093137254902) 25%, rgba(37,200,21,0.5046393557422969) 44%, rgba(7,149,42,0.40379901960784315) 60%, rgba(41,133,232,0.5914740896358543) 81%, rgba(0,212,255,0.5074404761904762) ), */
-  /* url("./img/fond.webp") ; */
-/* }  */
+/* #modal-root{
+  
+ }  */
+
+
+
 
 img{
   height: 10vh;
@@ -70,9 +70,7 @@ body {
     transform: translate(calc(-100vw - 300px), 0); /* Animate past left past the screen */
   }
 }
-.ocean {
- 
-}
+
 
 .bubble {
   z-index: -1;

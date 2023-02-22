@@ -9,10 +9,12 @@ const ModalComponentForm = (props) => {
   }
 
   return (
+    <div className='bg'>
     <div className={classes.modal} onClick={closeModalHandler}>
       <div className={classes['modal-content']}>
         {props.children}
       </div>
+    </div>
     </div>
   )
 }
